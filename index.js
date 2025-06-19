@@ -21,3 +21,6 @@ function startGame() {
     messageEl.textContent = msg
     sum.textContent = "Sum: " + cardSum
 }
+function newCard() {
+    console.log("hello")
+}
