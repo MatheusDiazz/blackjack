@@ -4,7 +4,12 @@ let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
 let msg = ""
-if (sum<=20) {
+
+console.log(hasBlackJack)
+console.log(isAlive)
+console.log(msg)
+function startGame() {
+    if (sum<=20) {
     msg = "Do you want to draw another card?"
 }
 else if (sum ===21) {
@@ -15,6 +20,5 @@ else {
     msg = "You're out of the game" 
     isAlive = false
 }
-console.log(hasBlackJack)
-console.log(isAlive)
-console.log(msg)
+    console.log("msg")
+}
