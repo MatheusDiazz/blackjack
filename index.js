@@ -47,9 +47,12 @@ function renderGame() {
     sumEl.textContent = "Sum: " + cardSum
 }
 function newCard() {
+    if (cardSum <= 21) {
     let newCard = randomCard()
     cardSum += newCard
     cards.push(newCard)
     renderGame()
+    }
+
 }
 console.log(cards)
