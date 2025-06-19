@@ -1,5 +1,9 @@
-let firstCard = 2
-let secondCard = 3
+function randomCard() {
+    let result = Math.floor(Math.random() * 10) + 2
+    return result
+}
+let firstCard = randomCard()
+let secondCard = randomCard()
 let cardSum = firstCard + secondCard
 let cards = [firstCard, secondCard]
 let hasBlackJack = false
@@ -27,12 +31,12 @@ function renderGame() {
     } else {
         msg = "You're out of the game"
         isAlive = false
-    }
+    } 
     messageEl.textContent = msg
     sumEl.textContent = "Sum: " + cardSum
 }
 function newCard() {
-    let newCard = 5
+    let newCard = randomCard()
     cardSum += newCard
     cards.push(newCard)
     renderGame()
